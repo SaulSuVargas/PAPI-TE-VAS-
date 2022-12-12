@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --altura-alto: 3.5rem;
+
+    /* COLORES BASADOS EN HSL(MATIZ, SATURACION Y LUMINOSIDAD) */
+    --negro-color: hsl(0, 0%, 0%); 
+    --blanco-color: hsl(0, 0%, 94%);
+    --senati-color-alt: #0239ee;
+    --title-color: hsl(0, 0%, 94%);
+    --text-color: hsl(0, 0%, 0%);
+    --text-color-claro: hsl(0, 0%, 55%);
+    --body-color: #0135DF;
+    --background-color: rgb(241, 241, 241);
+    --borde-color: hsl(0, 0%, 2%);
+    --color: #cfc547;
+    --text-shadow: 10px 10px 25px rgba(46, 46, 46, 0.897),
+    -10px 10px 25px rgba(5, 5, 5, 0.171),
+    -10px -10px 25px rgba(63, 63, 63, 0.39),
+    10px -10px 25px rgba(56, 56, 56, 0.37);
+}
+body{
+    overflow: auto;
+}
+.card-title{
+    color: black;
+    font-weight: 900;
+}
+#cardcurso1{
+    position: relative;
+    margin: 30px;
+    background: linear-gradient(180deg,#f65321,#616161);
+    border-radius: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#web-1{
+    max-width:200px;
+    min-width: 100px;
+}
+#web-2{
+    max-width:200px;
+    min-width: 100px;
+    position: relative;
+    left: 28px;
+    top: 30px !important;
+    margin: 20px !important;
+}
+#web-3{
+    max-width:200px;
+    min-width: 100px;
+    position: relative;
+    left: 18px;
+    top: 16px !important;
+    margin: 20px;
+}
+#web-3:hover{
+    transition: 0.4s ease-out;
+    transform: scale(1.1)}
+#cardcurso1 img{
+    position: relative;
+    top: 20px;
+    margin: 10px;
+    right: 20px;
+}
+.card-text{
+    font-size: 15px;
+}
+.card-text small{
+    color: rgb(10, 0, 0) !important;
+}
+#web-1:hover{
+    transition: 0.4s ease-out;
+    transform: scale(1.1);
+}
+#web-2:hover{
+    transition: 0.4s ease-out;
+    transform: scale(1.1);
+}
+#cardcurso2{
+    position: relative;
+    margin: 30px;
+    background: linear-gradient(180deg,#21c4f6,#aaaaaa);
+    border-radius: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#cardcurso3{
+    position: relative;
+    margin: 30px;
+    background: linear-gradient(180deg,#f63a21,#070707);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.home_content span{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+.home_content a{
+    text-decoration: none;
+}
+.home_content span:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    color: rgb(5, 236, 5);
+}
+.col-md-4 i{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 14px;
+    margin: 2px;
+    left: 30px;
+}
+.icon20{
+    position: relative;
+    left: 60px !important;
+}
+.card-text2{
+    font-size: 15px;
+}
+#flechaback{
+    position: relative;
+    font-size: 50px !important;
+    text-align: center;
+    left: 60px;
+    top: 60px;
+}
+@media screen and (max-width: 320px){
+    #cardcurso1 img{
+        display: none;
+    }
+    #web-2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 766px) and (min-width: 466px) {
+    .col-md-4 i{
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+        position: relative;
+        left: 5px;
+        top: 30px;
+    }
+}
+@media screen and (max-width: 632px){
+    .col-md-4 i{
+        display: none;
+    }
+}
+#textofecha{
+    color: rgba(196, 195, 195, 0.808) !important;
+}

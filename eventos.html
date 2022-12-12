@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <!--ICONS-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/change.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <title>Calificaciones</title>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <a href="sinfo.html"><img src="/Menu Imagenes/logosenati.png" id="logosenatinav" alt="" width="50px"></a>
+                    <div class="logo_name">SINFO</div>
+                </div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                        <i class='bx bx-search' ></i>
+                        <input type="text" placeholder="Search..."> 
+                        <span class="tooltip">Search</span>
+                </li>
+                <li>
+                    <a href="cursos.html">
+                        <i class='bx bxs-grid-alt' ></i>
+                        <span class="links_name">Cursos</span>
+                    </a>
+                        <span class="tooltip">Cursos Act.</span>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class='bx bxs-user-circle'></i>
+                        <span class="links_name">Identificacion</span>
+                    </a>
+                        <span class="tooltip">Identificacion</span>
+                </li>
+                <li>
+                    <a href="institucion.html">
+                        <i class='bx bxs-institution' ></i>
+                        <span class="links_name">Institucion</span>
+                    </a>
+                        <span class="tooltip">Institucion</span>
+                </li>
+                <li>
+                    <a href="cuenta.html">
+                        <i class='bx bx-certification'></i>
+                        <span class="links_name">Cuenta</span>
+                    </a>
+                        <span class="tooltip">Cuenta</span>
+                </li>
+                <li>
+                    <a href="calificaciones.html">
+                        <i class='bx bxs-graduation'></i>
+                        <span class="links_name">Calificaciones</span>
+                    </a>
+                        <span class="tooltip">Calificaciones</span>
+                </li>
+                <li>
+                    <a href="horario.html">
+                        <i class='bx bxs-calendar'></i>
+                        <span class="links_name">Horario</span>
+                    </a>
+                        <span class="tooltip">Horario</span>
+                </li>
+                <li>
+                    <a href="eventos.html">
+                        <i class='bx bxs-party'></i>
+                        <span class="links_name">Eventos</span>
+                    </a>
+                        <span class="tooltip">Eventos</span>
+                </li>
+                <i class="bx bx-moon change-theme" id="theme-button">
+                </i>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="/sinfo imagenes/kisspng-avatar-clip-art-5b0fe09c1801f1.3796180615277671960984.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Anderson Marcelo</div>
+                            <div class="job">Estudiante</div>
+                        </div>
+                    </div>
+                    <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
+                    <span class="logout">LOG OUT</span>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="text">Bienvenido a tu sinfo
+            </div>
+        <div class="icons">
+            <i class='bx bx-star bx-tada bx-flip-vertical icon'></i><br><br><br>
+            <i class='bx bx-star bx-tada bx-flip-vertical icon'></i><br><br><br>
+            <i class='bx bx-star bx-tada bx-flip-vertical icon'></i><br><br><br>
+            <i class='bx bx-star bx-tada bx-flip-vertical icon'></i><br><br><br>
+        </div>
+        
+        <script>
+        
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search");
+            
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,278 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="java.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--ICONS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/change.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-background: #00000000;
+            --cor-branco: #fff;
+            --cor-texto: #241a52;
+            --cor-texto-fraco: #c4bfd4;
+            --cor-borda-input-desabilitado: #f2f1f6;
+            --cor-linear-1: #1c3f9c;
+            --cor-linear-2: #7462c4;
+            --cor-background-desfocado: rgba(4, 0, 253, 0.822);
+            --cor-shadow-desfocado: rgba(0, 30, 165, 0.938);
+            --cor-borda-desfocado: rgba(2, 2, 2, 0.027);
+            --text-color: hsl(0, 0%, 0%);
+            --text-color2: hsl(0, 0%, 94%);
+
+        }
+        .imagem__background{
+            display: block;
+        }
+        .card__giratorio {
+            background-color: transparent;
+            width: 350px;
+            height: 220px;
+            perspective: 1000px;
+            cursor: pointer;
+            position: relative;
+            top: 25px;
+            margin: 20px;
+        }
+
+        .card__giratorio-conteudo {
+            cursor: pointer;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .card__giratorio:hover .card__giratorio-conteudo {
+            transform: rotateY(180deg);
+        }
+
+        .card__giratorio-conteudo--frente,
+        .card__giratorio-conteudo--traseira {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .card__giratorio-conteudo--frente,
+        .card__giratorio-conteudo--traseira {
+            background-color: var(--cor-background-desfocado);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px var(--cor-shadow-desfocado), inset 0 0 32px -11px white;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid var(--cor-borda-desfocado);
+        }
+
+        .logo-mastercadr {
+            width: 100px;
+            height: auto;
+            filter: drop-shadow(2px 2px 5px black);
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__chip {
+            grid-area: cartao__chip;
+            width: 30px;
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__logo-pc {
+            grid-area: cartao__logo-pc;
+            width: 50px;
+            height: auto;
+            filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__numeral {
+            grid-area: cartao__numeral;
+            margin: 0;
+            font-weight: 100;
+            font-size: 1.1rem;
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__validade {
+            grid-area: cartao__validade;
+            margin: 0;
+            font-weight: 100;
+            font-size: .85rem;
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__nome-pessoa {
+            grid-area: cartao__nome-pessoa;
+            margin: 0;
+            font-weight: 100;
+            font-size: .85rem;
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__conta-corrente {
+            grid-area: cartao__conta-corrente;
+            margin: 0;
+            font-weight: 100;
+            font-size: .85rem;
+        }
+
+        .card__giratorio-conteudo--traseira .cartao__logo-mastercadr {
+            grid-area: cartao__logo-mastercadr;
+            width: 50px;
+            height: auto;
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, .4));
+            position: relative;
+            right: 12px;
+        }
+
+        .card__giratorio-conteudo--traseira {
+            color:var(--text-color2);
+            transform: rotateY(180deg);
+            padding: 10px;
+            display: grid;
+            text-align: left;
+            grid-template-columns: 30px 1fr 50px 50px 50px 50px;
+            grid-template-rows: 1fr 20px 20px 20px 20px;
+            grid-template-areas: ". cartao__chip . . cartao__logo-pc ."
+                ". cartao__numeral cartao__numeral cartao__numeral . ."
+                ". . . cartao__validade . ."
+                ". cartao__nome-pessoa cartao__nome-pessoa . . cartao__logo-mastercadr"
+                ". cartao__conta-corrente cartao__conta-corrente cartao__conta-corrente . cartao__logo-mastercadr";
+        }
+    </style>
+    <title>Sinfo</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <a href="sinfo.html"><img src="/Menu Imagenes/logosenati.png" id="logosenatinav" alt="" width="50px"></a>
+                <div class="logo_name">SINFO</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search..."> 
+                    <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="cursos.html">
+                    <i class='bx bxs-grid-alt' ></i>
+                    <span class="links_name">Cursos</span>
+                </a>
+                    <span class="tooltip">Cursos Act.</span>
+            </li>
+            <li>
+                <a href="user.html">
+                    <i class='bx bxs-user-circle'></i>
+                    <span class="links_name">Identificacion</span>
+                </a>
+                    <span class="tooltip">Identificacion</span>
+            </li>
+            <li>
+                <a href="institucion.html">
+                    <i class='bx bxs-institution' ></i>
+                    <span class="links_name">Institucion</span>
+                </a>
+                    <span class="tooltip">Institucion</span>
+            </li>
+            <li>
+                <a href="cuenta.html">
+                    <i class='bx bx-certification'></i>
+                    <span class="links_name">Cuenta</span>
+                </a>
+                    <span class="tooltip">Cuenta</span>
+            </li>
+            <li>
+                <a href="calificaciones.html">
+                    <i class='bx bxs-graduation'></i>
+                    <span class="links_name">Calificaciones</span>
+                </a>
+                    <span class="tooltip">Calificaciones</span>
+            </li>
+            <li>
+                <a href="horario.html">
+                    <i class='bx bxs-calendar'></i>
+                    <span class="links_name">Horario</span>
+                </a>
+                    <span class="tooltip">Horario</span>
+            </li>
+            <li>
+                <a href="eventos.html">
+                    <i class='bx bxs-party'></i>
+                    <span class="links_name">Eventos</span>
+                </a>
+                    <span class="tooltip">Eventos</span>
+            </li>
+            <i class="bx bx-moon change-theme" id="theme-button">
+            </i>
+        </ul>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="/sinfo imagenes/kisspng-avatar-clip-art-5b0fe09c1801f1.3796180615277671960984.png" alt="">
+                    <div class="name_job">
+                        <div class="name">Anderson Marcelo</div>
+                        <div class="job">Estudiante</div>
+                    </div>
+                </div>
+                <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
+                <span class="logout">LOG OUT</span>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <h1 class="text2">Carnet Estudiante</h1>
+        <main class="imagem__background">
+            <div class="card__giratorio">
+                <div class="card__giratorio-conteudo">
+                    <div class="card__giratorio-conteudo--frente">
+                        <img src="User imagenes/kisspng-avatar-clip-art-5b0fe09c1801f1.3796180615277671960984.png" alt="Logo mastercadr" class="logo-mastercadr">
+                    </div>
+                    <div class="card__giratorio-conteudo--traseira">
+                        <div id="laFecha"></div>
+                        <div id= "info"></div>
+                        <img src="./User imagenes/senati_x_200-removebg-preview.png" alt="Logo Programador CS" class="cartao__logo-pc">
+                        <h2 class="cartao__numeral">ID: 001457543</h2>
+                        <h3 class="cartao__validade">Ingenieria de Software</h3><br>
+                        <h3 class="cartao__nome-pessoa">Anderson Marcelo</h3>
+                        <h3 class="cartao__conta-corrente">DNI: 73235186 </h3>
+                        <img src="/User imagenes/kisspng-avatar-clip-art-5b0fe09c1801f1.3796180615277671960984.png" alt="Logo mastercadr" class="cartao__logo-mastercadr">
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+    <script>
+    
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+        
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="java.js"></script>
+</body>
+</html>

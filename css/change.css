@@ -1,0 +1,47 @@
+
+.change-theme {
+    color: var(--negro-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+body.dark-theme {
+    --blanco-color: hsl(0, 0%, 0%);
+    --negro-color: rgb(226, 226, 226);
+    --boton-color-alt: #022ebe;
+    --title-color: hsl(0, 0%, 0%);
+    --text-color: hsla(0, 0%, 91%, 0.884);
+    --body-color: hsl(249, 100%, 13%);
+    --background-color: hsl(0, 0%, 9%);
+    --borde-color: rgb(255, 255, 255);
+    --color: #cfc547;
+    --text-shadow: 10px 10px 25px rgb(81,67,21),
+    -10px 10px 25px rgb(81,67,21),
+    -10px -10px 25px rgb(81,67,21),
+    10px -10px 25px rgb(81,67,21);
+    --cor-background-desfocado: rgba(3, 3, 3, 0.822);
+    --cor-background-desfocado: rgb(34, 34, 34);
+    --cor-background-desfocado: rgba(1, 14, 194, 0.39);
+    --text-color2: hsl(0, 0%, 94%);
+
+}
+/* CAMBIOS DE COLOR EN ALGUNAS PARTES */
+.dark-theme .change-theme,
+.dark-theme .nav_toggle,
+.dark-theme .nav_shop,
+.dark-theme .button--gris {
+    color: hsl(59, 100%, 50%);
+}
+
+.dark-theme .scroll-header {
+    box-shadow: 0 1px 4px hsla(0, 0%, 4%, .3);
+}
+
+.scroll-header .change-theme,
+.scroll-header .nav_toggle,
+.scroll-header .nav_shop {
+    color: var(--title-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background: hsl(0, 0%, 30%);
+}

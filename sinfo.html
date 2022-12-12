@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--ICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/change.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <title>Sinfo</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <a href="sinfo.html"><img src="/Menu Imagenes/logosenati.png" id="logosenatinav" alt="" width="50px"></a>
+                <div class="logo_name">SINFO</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search..."> 
+                    <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="cursos.html">
+                    <i class='bx bxs-grid-alt' ></i>
+                    <span class="links_name">Cursos</span>
+                </a>
+                    <span class="tooltip">Cursos Act.</span>
+            </li>
+            <li>
+                <a href="user.html">
+                    <i class='bx bxs-user-circle'></i>
+                    <span class="links_name">Identificacion</span>
+                </a>
+                    <span class="tooltip">Identificacion</span>
+            </li>
+            <li>
+                <a href="institucion.html">
+                    <i class='bx bxs-institution' ></i>
+                    <span class="links_name">Institucion</span>
+                </a>
+                    <span class="tooltip">Institucion</span>
+            </li>
+            <li>
+                <a href="cuenta.html">
+                    <i class='bx bx-certification'></i>
+                    <span class="links_name">Cuenta</span>
+                </a>
+                    <span class="tooltip">Cuenta</span>
+            </li>
+            <li>
+                <a href="calificaciones.html">
+                    <i class='bx bxs-graduation'></i>
+                    <span class="links_name">Calificaciones</span>
+                </a>
+                    <span class="tooltip">Calificaciones</span>
+            </li>
+            <li>
+                <a href="horario.html">
+                    <i class='bx bxs-calendar'></i>
+                    <span class="links_name">Horario</span>
+                </a>
+                    <span class="tooltip">Horario</span>
+            </li>
+            <li>
+                <a href="eventos.html">
+                    <i class='bx bxs-party'></i>
+                    <span class="links_name">Eventos</span>
+                </a>
+                    <span class="tooltip">Eventos</span>
+            </li>
+            <i class="bx bx-moon change-theme" id="theme-button">
+            </i>
+
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="/sinfo imagenes/kisspng-avatar-clip-art-5b0fe09c1801f1.3796180615277671960984.png" alt="">
+                    <div class="name_job">
+                        <div class="name">Anderson Marcelo</div>
+                        <div class="job">Estudiante</div>
+                    </div>
+                </div>
+                <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
+                <span class="logout">LOG OUT</span>
+            </div>
+        </div>
+    </div>
+<div class="home_content">
+    <div class="animate__animated animate__slideOutRight" id="padretrans">
+        <div class="animate__animated animate__backInDown animate__delay-2s animate__fadeIn" id="text">Hola soy Tony! Bievenido a tu SINFO</div>
+        <img src="/sinfo imagenes/tony.png" width="200px" class="animate__animated animate__backInDown " id="tony">
+    </div>
+    <div class="animate__animated animate__zoomOutDown" id="padretrans2">
+        <div class="animate__animated animate__backInDown animate__delay-3s animate__fadeIn" id="text2">Soy tu asistente virtual de SINFO</div>
+        <img src="/sinfo imagenes/tony2.png" width="245px" class="animate__animated animate__fadeInTopLeft" id="tony2">
+    </div>
+    <div class="animate__animated animate__zoomOutDown" id="padretrans3">
+        <div class="animate__animated animate__backInDown animate__delay-3s animate__fadeIn" id="text3">Estare Aqui para ti</div>
+        <img src="/sinfo imagenes/tony3.png" width="370px" class="animate__animated animate__fadeInRightBig" id="tony3">
+    </div>
+    <div class="animate__animated animate__slideOutLeft" id="padretrans4">
+    <div class="animate__animated animate__backInDown animate__delay-2s animate__fadeIn" id="text4">Tienes una barra de navegacion para <br> dirigirte a otras secciones <br></div>
+        <img src="/sinfo imagenes/tony.png" width="170px" class="animate__animated animate__backInDown " id="tony4">
+    </div>
+        <div id="padrededivs" class="animate__animated animate__fadeIn">
+            <center><h1 class="titulosinfo">Eventos, Noticias y promociones</h1></center>
+            <div class="card-group1">
+            <div class="card1">
+                <a href="https://sinfo.senati.edu.pe/PROD/bzsktess.P_DispTerms" target="_blank"><img src="sinfo imagenes/form.png" class="card-img-top" id="encuesta10" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Encuesta de opinion academica</h5>
+                    <a href="https://sinfo.senati.edu.pe/PROD/bzsktess.P_DispTerms" target="_blank"><p class="card-text">Ingresa aquí para responder la encuesta académica</p></a>
+                    <p class="card-text"><small class="text-muted">Last updated 45 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card-group1">
+                <div class="card1">
+                    <a href="https://sinfo.senati.edu.pe/_wfm/files/SINFO/Actividades_Academica_Periodo_202220.pdf" target="_blank"><img src="sinfo imagenes/covid.jpg" class="card-img-top" id="covid2" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Comunicado: actualización de plan COVID-19</h5>
+                        <a href="https://sinfo.senati.edu.pe/_wfm/files/SINFO/Actividades_Academica_Periodo_202220.pdf" target="_blank"><p class="card-text">Actualización a octubre del plan COVID-19</p></a>
+                        <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                    </div>
+                </div>
+                <div class="card-group1">
+                <div class="card1">
+                    <a href="https://www.senati.edu.pe/formularioAlumnos/" target="_blank"><center><img src="sinfo imagenes/pngwing.com-removebg-preview.png" id="formalum"  class="card-img-top" alt="..."></center></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Formulario atención alumnos</h5>
+                            <a href="https://www.senati.edu.pe/formularioAlumnos/" target="_blank"><p class="card-text">Te presentamos el formulario de atención alumnos</p></a>
+                            <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card-group1">
+                        <div class="card1">
+                            <a href="https://senatipe.sharepoint.com/sites/tutoriaestudiantes"target="_blank"><center><img src="sinfo imagenes/pngegg.png" id="siteturoria" class="card-img-top" alt="..."></center></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Site Tutoría</h5>
+                                <a href="https://senatipe.sharepoint.com/sites/tutoriaestudiantes"target="_blank"><p class="card-text">Site Tutoria</p></a>
+                                <p class="card-text"><small class="text-muted">Last updated 5 months ago</small></p>
+                            </div>
+                        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+        
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
